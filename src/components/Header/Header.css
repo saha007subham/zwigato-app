@@ -1,0 +1,24 @@
+.headtext__cormorant {
+    font-family: var(--font-base);
+    color: var(--color-orange);
+    font-size: 50px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+
+  .header__ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .header__main-div {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
