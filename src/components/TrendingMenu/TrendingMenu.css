@@ -1,0 +1,6 @@
+.trending__menu{
+    color: var(--color-orange);
+    font-family: var(--font-alt);
+    background-color: var(--color-light-black);
+    height: 340px;
+}

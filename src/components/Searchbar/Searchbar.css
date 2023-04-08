@@ -1,0 +1,32 @@
+.searchbar__div {
+    width: 45%;
+    display: flex;
+    gap:5px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.searchbar {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: var(--font-alt);
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* .headtext__cormorant {
+      color: red;
+    } */
+    
+  }
+
+  @media screen and (max-width: 650px){
+
+    .searchbar__div{
+        display: none;
+    }
+
+  }

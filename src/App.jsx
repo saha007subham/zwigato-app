@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import Header from "./components/Header";
-import Body from "./components/pages/Body";
+import Body from "../src/pages/Body";
 
 function App() {
   return (
