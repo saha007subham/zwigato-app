@@ -10,7 +10,7 @@ import { BiUserCircle } from "react-icons/bi";
 const Header = () => {
   return (
     <div className="header__main-div">
-      <div>
+      <div style={{ cursor: "pointer" }}>
         <h1 className="headtext__cormorant">Zwigato</h1>
       </div>
 
@@ -24,7 +24,7 @@ const Header = () => {
           </li>
           <li className="header__icons">
             <BiBuoy size={20} />
-            Help
+            Instamart
           </li>
           <li className="header__icons">
             <BiCartAdd size={20} />
