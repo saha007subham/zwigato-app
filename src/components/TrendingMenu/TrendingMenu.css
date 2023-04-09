@@ -1,6 +1,56 @@
-.trending__menu{
-    color: var(--color-orange);
-    font-family: var(--font-alt);
+
+.trending-img{
+    width: 260px;
+    height: 260px;
+}
+
+.leftArrow__div{
+    background-color: white;
+    position: absolute;
+    left: 5px;
+    top: 140px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rightArrow__div{
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 140px;
+}
+
+.app__gallery-images{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    position: relative;
     background-color: var(--color-light-black);
-    height: 340px;
+    padding: 30px;
+}
+
+.app__gallery-images_container{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap:54px;
+}
+
+.app__gallery-images_container::-webkit-scrollbar{
+    display: none;
+}
+
+.app__gallery-images_card img:hover{
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
 }

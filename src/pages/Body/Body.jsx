@@ -1,5 +1,5 @@
 import React from "react";
-import TrendingMenu from "../../TrendingMenu/TrendingMenu";
+import TrendingMenu from "../../components/TrendingMenu";
 
 const Body = () => {
   return (
