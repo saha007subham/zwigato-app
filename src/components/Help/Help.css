@@ -1,5 +1,46 @@
 .help__main-div{
     display: flex;
     justify-content: space-between;
+    align-items: start;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.app__logo{
+    display: flex;
+    gap: 20px;
     align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    cursor: pointer;
+}
+
+/* .company__div{
+    background-color: red;
+}
+
+.contact__div{
+    background-color: blue;
+}
+
+.legal__div{
+    background-color: yellow;
+} */
+
+.list-style{
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: var(--font-alt);
+    color: white;
+    cursor: pointer;
+}
+
+.ul__header1{
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-gray);
+    text-align: start;
 }

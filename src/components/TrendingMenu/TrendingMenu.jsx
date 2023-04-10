@@ -11,9 +11,9 @@ const TrendingMenu = () => {
     console.log("Clicked...");
 
     if (direction === "left") {
-      current.scrollLeft -= 300;
+      current.scrollLeft -= 320;
     } else {
-      current.scrollLeft += 300;
+      current.scrollLeft += 320;
     }
   };
   return (

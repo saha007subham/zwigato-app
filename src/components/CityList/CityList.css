@@ -2,4 +2,28 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 20px;
+    /* margin-bottom: 30px; */
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.ul__header{
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.list-style{
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: var(--font-alt);
+    color: white;
+}
+
+.cityList__main-div{
+    /* padding-bottom: 20px; */
+    margin-bottom: 10px;
 }

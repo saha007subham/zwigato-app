@@ -1,10 +1,11 @@
 import Help from "../Help";
 import CityList from "../CityList";
 import SocialHandles from "../SocialHandles";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div style={{ padding: "15px" }}>
+    <div className="footer__main-div">
       <Help />
       <CityList />
       <SocialHandles />

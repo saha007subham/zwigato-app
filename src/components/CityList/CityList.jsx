@@ -6,27 +6,43 @@ import { citiesD } from "../../utils/citiesName";
 
 const CityList = () => {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>WE DELIVER TO</h1>
+    <div className="cityList__main-div">
+      <h1 className="ul__header">WE DELIVER TO</h1>
       <div className="citiesList__div">
         <ul>
           {citiesA.map((cities, idx) => {
-            return <li key={idx}>{cities}</li>;
+            return (
+              <li key={idx} className="list-style">
+                {cities}
+              </li>
+            );
           })}
         </ul>
         <ul>
           {citiesB.map((cities, idx) => {
-            return <li key={idx}>{cities}</li>;
+            return (
+              <li key={idx} className="list-style">
+                {cities}
+              </li>
+            );
           })}
         </ul>
         <ul>
           {citiesC.map((cities, idx) => {
-            return <li key={idx}>{cities}</li>;
+            return (
+              <li key={idx} className="list-style">
+                {cities}
+              </li>
+            );
           })}
         </ul>
         <ul>
           {citiesD.map((cities, idx) => {
-            return <li key={idx}>{cities}</li>;
+            return (
+              <li key={idx} className="list-style">
+                {cities}
+              </li>
+            );
           })}
         </ul>
       </div>
