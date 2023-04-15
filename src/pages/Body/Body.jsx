@@ -1,6 +1,8 @@
 import React from "react";
 import TrendingMenu from "../../components/TrendingMenu";
 
+//COmponents
+
 const Body = () => (
   <div>
     <TrendingMenu />
