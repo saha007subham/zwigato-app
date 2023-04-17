@@ -6,26 +6,33 @@ import { BiBoltCircle } from "react-icons/bi";
 import { BiBuoy } from "react-icons/bi";
 import { BiCartAdd } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header__main-div">
-      <div style={{ cursor: "pointer" }}>
-        <h1 className="headtext__cormorant">Zwigato</h1>
-      </div>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <div style={{ cursor: "pointer" }}>
+          <h1 className="headtext__cormorant">Zwigato</h1>
+        </div>
+      </Link>
 
       <Searchbar />
 
       <div>
         <ul className="header__ul">
-          <li className="header__icons">
-            <BiBoltCircle size={20} />
-            Offers
-          </li>
-          <li className="header__icons">
-            <BiBuoy size={20} />
-            Instamart
-          </li>
+          <Link to="/offer" className="link-tag">
+            <li className="header__icons">
+              <BiBoltCircle size={20} />
+              Offers
+            </li>
+          </Link>
+          <Link to="/instamart" className="link-tag">
+            <li className="header__icons">
+              <BiBuoy size={20} />
+              Instamart
+            </li>
+          </Link>
           <li className="header__icons">
             <BiCartAdd size={20} />
             Cart

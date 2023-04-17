@@ -41,6 +41,15 @@
     display: none;
   } */
 
+  .link-tag{
+    text-decoration: none;
+    color: black;
+  }
+
+  .link-tag:hover{
+    color: var(--color-orange);
+  }
+
   @media screen and (max-width: 1150px) {
 
     .header__main-div {
