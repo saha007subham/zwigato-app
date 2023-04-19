@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TrendingMenu from "../../components/TrendingMenu";
+import { Link } from "react-router-dom";
 
 //COmponents
 
@@ -15,10 +16,10 @@ const Body = () => {
 
     const data = await res.json();
 
-    // console.log(data?.data);
+    // console.log(data);
 
-    setAllRestro(data?.data?.cards[0]?.data?.data?.cards);
-    setFilterRestro(data?.data?.cards[0]?.data?.data?.cards);
+    setAllRestro(data?.data?.cards[2]?.data?.data?.cards);
+    setFilterRestro(data?.data?.cards[2]?.data?.data?.cards);
     // console.log(filteredRestro);
   };
 
@@ -26,7 +27,7 @@ const Body = () => {
     getRestro();
   }, []);
 
-  console.log(filteredRestro);
+  // console.log(filteredRestro);
 
   return (
     <div>
@@ -41,19 +42,20 @@ const Body = () => {
       >
         {filteredRestro?.map((res) => {
           return (
-            <div
-              key={res.data.id}
-              style={{
-                border: "1px solid red",
-                padding: "5px",
-                height: "90px",
-                cursor: "pointer",
-              }}
-            >
-              <p>ID : {res?.data?.id}</p>
-              <p>{res?.data?.name}</p>
-              <p>{res?.data?.locality}</p>
-            </div>
+            <Link to={"/restraunts/" + res.data.id} key={res.data.id}>
+              <div
+                style={{
+                  border: "1px solid red",
+                  padding: "5px",
+                  height: "90px",
+                  cursor: "pointer",
+                }}
+              >
+                <p>ID : {res?.data?.id}</p>
+                <p>{res?.data?.name}</p>
+                <p>{res?.data?.locality}</p>
+              </div>
+            </Link>
           );
         })}
       </div>

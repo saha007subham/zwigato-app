@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Offer from "./pages/Offer/Offer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Instamart from "./components/Instamart/Instamart";
+import RestrauDetails from "./pages/RestrauDetails/RestrauDetails";
 
 function App() {
   return (
@@ -35,6 +36,10 @@ export const appRouter = createBrowserRouter([
       {
         path: "/instamart",
         element: <Instamart />,
+      },
+      {
+        path: "/restraunts/:id",
+        element: <RestrauDetails />,
       },
     ],
   },
