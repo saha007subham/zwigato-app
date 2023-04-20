@@ -1,10 +1,9 @@
+import "./Body.css";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { GET_ALL_RESTAURANT } from "../../constants";
 import TrendingMenu from "../../components/TrendingMenu";
 import RestaurantCard from "../../components/RestaurantCard";
-import { Link } from "react-router-dom";
-import "./Body.css";
-
-//COmponents
 
 const Body = () => {
   const [search, setSearch] = useState("");
@@ -12,9 +11,7 @@ const Body = () => {
   const [allRestro, setAllRestro] = useState([]);
 
   const getRestro = async () => {
-    const res = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.71693713897372&lng=88.43584332615137&page_type=DESKTOP_WEB_LISTING"
-    );
+    const res = await fetch(GET_ALL_RESTAURANT);
 
     const data = await res.json();
 

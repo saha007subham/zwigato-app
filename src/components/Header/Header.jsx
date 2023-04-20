@@ -1,12 +1,12 @@
-import React from "react";
 import "./Header.css";
+import React from "react";
+import { Link } from "react-router-dom";
 import Searchbar from "../Searchbar/Searchbar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiBoltCircle } from "react-icons/bi";
 import { BiBuoy } from "react-icons/bi";
 import { BiCartAdd } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (

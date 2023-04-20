@@ -1,5 +1,6 @@
 import "./RestaurantCard.css";
 import { AiOutlineStar } from "react-icons/ai";
+import { FOOD_CDN_IMG } from "../../constants";
 
 const RestaurantCard = ({
   name,
@@ -9,13 +10,11 @@ const RestaurantCard = ({
   deliveryTime,
   costForTwoString,
 }) => {
-  const cloudinaryImg =
-    "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
   return (
     <div className="restra__card">
       <img
         alt="food-img"
-        src={cloudinaryImg + cloudinaryImageId}
+        src={FOOD_CDN_IMG + cloudinaryImageId}
         className="food__img"
       />
       <p className="food__name">{name}</p>
