@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import TrendingMenu from "../../components/TrendingMenu";
+import RestaurantCard from "../../components/RestaurantCard";
 import { Link } from "react-router-dom";
+import "./Body.css";
 
 //COmponents
 
@@ -32,29 +34,16 @@ const Body = () => {
   return (
     <div>
       <TrendingMenu />
-      <div
-        style={{
-          height: "600px",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "5px",
-        }}
-      >
+      <div className="restaurant__container">
         {filteredRestro?.map((res) => {
+          console.log(res.data);
           return (
-            <Link to={"/restraunts/" + res.data.id} key={res.data.id}>
-              <div
-                style={{
-                  border: "1px solid red",
-                  padding: "5px",
-                  height: "90px",
-                  cursor: "pointer",
-                }}
-              >
-                <p>ID : {res?.data?.id}</p>
-                <p>{res?.data?.name}</p>
-                <p>{res?.data?.locality}</p>
-              </div>
+            <Link
+              to={"/restraunts/" + res.data.id}
+              key={res.data.id}
+              className="restaurant-cards"
+            >
+              <RestaurantCard {...res.data} />
             </Link>
           );
         })}

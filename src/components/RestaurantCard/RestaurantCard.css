@@ -1,0 +1,60 @@
+.restra__card{
+    /* border: 1px solid white; */
+    padding: 15px;
+    cursor: pointer;
+}
+
+.restra__card:hover{
+    box-shadow: 0px -3px 8px 5px rgba(0,0,0,0.1);
+    /* border: 1px solid var(--color-gray); */
+}
+
+.food__img{
+    height: 100%;
+    width: 100%;
+}
+
+.inner__div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.cuisines{
+    font-size: 13px;
+    color: var(--color-gray);
+    font-family: var(--font-alt);
+}
+
+.food__name{
+    font-size: 17px;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.rating__div{
+    background-color: var(--color-orange);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.rating__div-4{
+    background-color: var(--color-green);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.deliveryTime{
+    font-size: 12px;
+    color: var(--color-light-black);
+    font-family: var(--font-alt);
+}

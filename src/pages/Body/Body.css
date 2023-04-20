@@ -1,0 +1,13 @@
+.restaurant__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.restaurant-cards{
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font-alt);
+}
