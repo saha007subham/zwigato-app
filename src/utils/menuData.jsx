@@ -1,0 +1,1 @@
+const menu = ["Plain Rice"];

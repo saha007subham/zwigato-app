@@ -1,0 +1,9 @@
+.restrau__details-div{
+    display: flex;
+    gap: 20px;
+}
+
+.restrau__heading-div{
+    border: 1px solid green;
+    width: 100%;
+}

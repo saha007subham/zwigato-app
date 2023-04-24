@@ -13,7 +13,7 @@ const useRestraurant = (id) => {
 
     const data = await res.json();
     setRestaurant(data?.data?.cards[0]?.card?.card?.info);
-    // console.log(data?.data?.cards[0]?.card?.card?.info);
+    console.log("DATA--->", data?.data?.cards[0]?.card?.card?.info);
   };
 
   return restaurant;
