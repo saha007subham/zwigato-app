@@ -1,9 +1,94 @@
 .restrau__details-div{
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
 .restrau__heading-div{
-    border: 1px solid green;
+    border-bottom: 1px dotted gray;
     width: 100%;
+    padding: 30px 10px 0 10px;
+}
+
+.location__div{
+    display: flex;
+    gap: 10px;
+    font-family: var(--font-alt);
+    font-size: 12px;
+}
+
+.restro_details_main-div{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: var(--font-alt);
+    padding-bottom: 5px
+}
+
+.restro__details_div1{
+    width: 80%;
+}
+
+.restro__details_div2{
+    border: 1px solid rgb(231, 224, 224);
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+}
+
+.star{
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.delivery__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-weight: 600;
+    width: 94%;
+    margin: 20px 0 20px 0;
+}
+
+.discount__div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.discount__card{
+    border: 1px solid rgb(231, 224, 224);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: var(--font-alt);
+}
+
+.menus{
+    margin-top: 20px;
+    width: 80%;
+    /* background-color: red; */
+    padding: 0 20px 10px 30px;
+    /* border-bottom: 1px dotted gray; */
+
+}
+
+.recommended{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: var(--font-alt);
+}
+
+.foodItem__div {
+    display: flex;
+    justify-content: space-between;
+    align-Items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted rgb(231, 224, 224);
+    padding-bottom: 10px;
 }

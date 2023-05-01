@@ -1,0 +1,22 @@
+
+
+.addItems{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.addItem_button{
+    padding: 3px 20px;
+    color: green;
+    cursor: pointer;
+}
+
+.food__menu{
+    font-family: var(--font-alt);
+    font-size: 23px;
+    font-weight: 600;
+    /* background-color: blue; */
+    padding-top: 23px;
+}
