@@ -33,7 +33,7 @@ const Body = () => {
       <TrendingMenu />
       <div className="restaurant__container">
         {filteredRestro?.map((res) => {
-          console.log(res.data);
+          // console.log(res.data);
           return (
             <Link
               to={"/restraunts/" + res.data.id}
