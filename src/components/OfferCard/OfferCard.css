@@ -1,0 +1,23 @@
+.offerCard__main{
+    background-color: #005062;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.offer_image{
+    height: 200px;
+}
+
+.offer_h1{
+    font-family: var(--font-alt);
+    color: white;
+    font-size: 50px;
+}
+
+.offer_p{
+    font-family: var(--font-alt);
+    color: white;
+    font-size: 22px;
+}

@@ -1,8 +1,12 @@
+import OfferCard from "../../components/OfferCard/OfferCard";
+import "./Offer.css";
+
 const Offer = () => {
   return (
-    <div>
-      <h1>Offer</h1>
-    </div>
+    <>
+      <OfferCard />
+      <h1 className="coupon_h1">Available Coupons</h1>
+    </>
   );
 };
 
