@@ -1,4 +1,5 @@
-import OfferCard from "../../components/OfferCard/OfferCard";
+import CouponCard from "../../components/CouponCard";
+import OfferCard from "../../components/OfferCard";
 import "./Offer.css";
 
 const Offer = () => {
@@ -6,6 +7,9 @@ const Offer = () => {
     <>
       <OfferCard />
       <h1 className="coupon_h1">Available Coupons</h1>
+      <div className="offer_coupon">
+        <CouponCard />
+      </div>
     </>
   );
 };

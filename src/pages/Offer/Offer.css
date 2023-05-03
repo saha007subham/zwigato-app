@@ -1,5 +1,8 @@
 .coupon_h1{
-    margin: 10px 0 10px 0;
     font-family: var(--font-alt);
+    margin: 20px 0 20px 0;  
+}
+
+.offer_coupon{
     padding-left: 10px;
 }
