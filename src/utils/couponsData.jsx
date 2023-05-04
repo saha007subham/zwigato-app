@@ -1,9 +1,9 @@
-const couponsData = [
+export const couponsData = [
   {
     id: 1,
     code: "HSBCFEST",
     title: "Get 15% discount using HSBC Credit Cards",
-    description: "Maximum discount upto RS.100 on order above RS.499",
+    description: "Maximum discount up to ₹100 on orders above ₹250",
     url: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_40,h_40/rng/md/ads/production/7018e0ffdc47af1987b2c4fc5cb0f8aa",
   },
   {

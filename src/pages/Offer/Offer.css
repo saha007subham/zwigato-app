@@ -1,8 +1,12 @@
 .coupon_h1{
     font-family: var(--font-alt);
-    margin: 20px 0 20px 0;  
+    margin: 20px 0 0 20px;  
 }
 
 .offer_coupon{
-    padding-left: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }

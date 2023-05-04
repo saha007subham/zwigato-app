@@ -1,6 +1,7 @@
+import "./Offer.css";
 import CouponCard from "../../components/CouponCard";
 import OfferCard from "../../components/OfferCard";
-import "./Offer.css";
+import { couponsData } from "../../utils/couponsData";
 
 const Offer = () => {
   return (
@@ -8,7 +9,9 @@ const Offer = () => {
       <OfferCard />
       <h1 className="coupon_h1">Available Coupons</h1>
       <div className="offer_coupon">
-        <CouponCard />
+        {couponsData.map((data) => {
+          return <CouponCard {...data} key={data.id} />;
+        })}
       </div>
     </>
   );
