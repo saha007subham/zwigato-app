@@ -1,0 +1,19 @@
+.delivery_address_para{
+    font-family: var(--font-alt);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.delivery_p{
+    font-family: var(--font-alt);
+    color: #7e808c;
+}
+
+.address_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}

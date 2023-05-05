@@ -1,0 +1,43 @@
+.address__card{
+    border: 1px solid #d4d5d9;
+    width: 48%;
+    height: 30vh;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 30px;
+}
+
+.address_icons{
+    margin-right: 7px;
+    position: relative;
+    top: 2px;
+}
+
+.place{
+    font-family: var(--font-alt);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.address{
+    font-family: var(--font-alt);
+    color: #7e808c;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.time{
+    font-family: var(--font-alt);
+    margin-bottom: 20px;
+}
+
+.button{
+    padding: 9px 10px;
+    cursor: pointer;
+    background-color: #60b246;
+    color: white;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}

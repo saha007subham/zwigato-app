@@ -8,7 +8,7 @@ const CartPage = () => {
     <div className="main_div">
       <div className="left__div">
         <Delivery />
-        <Payment />
+        {/* <Payment /> */}
       </div>
       <div className="right__div">
         <CartDetails />
