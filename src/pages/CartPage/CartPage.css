@@ -1,0 +1,21 @@
+.main_div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px 0 20px 0;
+}
+
+
+.left__div{
+    border: 1px solid red;
+    width: 60%;
+    box-shadow: 0px -3px 8px 5px rgba(0,0,0,0.1);
+
+}
+
+.right__div{
+    border: 1px solid blue;
+    width: 30%;
+    box-shadow: 0px -3px 8px 5px rgba(0,0,0,0.1);
+
+}

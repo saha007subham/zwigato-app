@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { GET_ALL_RESTAURANT } from "../../constants";
 import TrendingMenu from "../../components/TrendingMenu";
 import RestaurantCard from "../../components/RestaurantCard";
+import Shimmer from "../../components/Shimmer";
 
 const Body = () => {
   const [search, setSearch] = useState("");
@@ -27,6 +28,10 @@ const Body = () => {
   }, []);
 
   // console.log(filteredRestro);
+
+  if (filteredRestro.length === 0) {
+    return <Shimmer />;
+  }
 
   return (
     <div>

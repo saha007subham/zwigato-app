@@ -27,16 +27,18 @@ const Header = () => {
               Offers
             </li>
           </Link>
-          <Link to="/instamart" className="link-tag">
+
+          <li className="header__icons">
+            <BiBuoy size={20} />
+            Instamart
+          </li>
+
+          <Link to="/cart" className="link-tag">
             <li className="header__icons">
-              <BiBuoy size={20} />
-              Instamart
+              <BiCartAdd size={20} />
+              Cart
             </li>
           </Link>
-          <li className="header__icons">
-            <BiCartAdd size={20} />
-            Cart
-          </li>
           <li className="header__icons">
             <BiUserCircle size={20} />
             Sign in
