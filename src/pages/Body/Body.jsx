@@ -29,7 +29,7 @@ const Body = () => {
 
   // console.log(filteredRestro);
 
-  if (filteredRestro.length === 0) {
+  if (filteredRestro?.length === 0) {
     return <Shimmer />;
   }
 

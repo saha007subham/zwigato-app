@@ -1,7 +1,16 @@
+import { useSelector } from "react-redux";
+
 const CartDetails = () => {
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log("Cart->", cartItems);
   return (
     <div>
-      <h1>Cart Detaisl...</h1>
+      {cartItems.map((item) => {
+        {
+          console.log(item.name);
+        }
+        return <p>{item.name}</p>;
+      })}
     </div>
   );
 };
