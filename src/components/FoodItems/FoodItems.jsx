@@ -3,11 +3,11 @@ import { BiRupee } from "react-icons/bi";
 import { addItems } from "../../redux/cartSlice";
 import { useDispatch } from "react-redux";
 
-const FoodItems = ({ name, price, url }) => {
+const FoodItems = ({ name, price, url, restaurant, areaName }) => {
   const dispatch = useDispatch();
 
-  const handleAddItem = (name, price) => {
-    const foodItems = { name, price };
+  const handleAddItem = (name, price, url, restaurant, areaName) => {
+    const foodItems = { name, price, url, restaurant, areaName };
     console.log(foodItems);
     dispatch(addItems(foodItems));
   };
@@ -28,7 +28,9 @@ const FoodItems = ({ name, price, url }) => {
           <p style={{ margin: "0 15px 0 15px", fontSize: "15px" }}>0</p>
           <button
             className="addItem_button"
-            onClick={() => handleAddItem(name, price)}
+            onClick={() =>
+              handleAddItem(name, price, url, restaurant, areaName)
+            }
           >
             +
           </button>

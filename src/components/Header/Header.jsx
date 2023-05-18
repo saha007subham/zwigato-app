@@ -39,7 +39,7 @@ const Header = () => {
           <Link to="/cart" className="link-tag">
             <li className="header__icons">
               <BiCartAdd size={20} />
-              Cart {cartItems.length}
+              Cart {cartItems.length > 0 ? cartItems.length : null}
             </li>
           </Link>
           <li className="header__icons">

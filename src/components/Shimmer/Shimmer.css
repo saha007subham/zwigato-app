@@ -1,0 +1,15 @@
+.main_container{
+    padding: 20px;
+}
+
+.trending_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending{
+    background-color: var(--shimmer);
+    height: 35vh;
+    width: 22%;
+}

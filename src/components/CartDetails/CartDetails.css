@@ -1,0 +1,131 @@
+.img_div{
+    display: flex;
+    gap: 25px;
+    border-bottom: 1px solid #d4d5d9;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+}
+
+.cart_main{
+    padding: 20px;
+}
+
+.restro_name{
+    font-family: var(--font-alt);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.area_name{
+    font-family: var(--font-alt);
+    color: #7e808c;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.item_name{
+    font-family: var(--font-alt);
+    display: inline;
+    margin-right: 55%;
+}
+
+.item_price{
+    font-family: var(--font-alt);
+    display: inline;
+}
+
+.suggestion{
+    font-family: var(--font-alt);
+    color: #7e808c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bill_details{
+    font-family: var(--font-alt);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item_total{
+    font-family: var(--font-alt);
+    display: inline;
+    width: 30%;
+    color: #7e808c;
+    font-size: 13px;
+    margin-bottom: 10px;
+  
+}
+
+.item_span{
+    color: #60b246;
+    font-family: var(--font-alt);
+    display: inline;
+    font-size: 13px;
+}
+
+.item_delivery{
+    font-family: var(--font-alt);
+    display: inline;
+    /* margin-right: 51%; */
+    color: #7e808c;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.item_gst{
+    font-family: var(--font-alt);
+    display: inline;
+    /* margin-right: 38%; */
+    color: #7e808c;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.gst_div{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+.pay_div{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+.item_pay{
+    font-family: var(--font-alt);
+    /* display: inline; */
+    margin-right: 74%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item_calculate{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-alt);
+    display: inline;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
