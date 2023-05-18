@@ -7,8 +7,11 @@ import { BiBoltCircle } from "react-icons/bi";
 import { BiBuoy } from "react-icons/bi";
 import { BiCartAdd } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     <div className="header__main-div">
       <Link to="/" style={{ textDecoration: "none" }}>
@@ -36,7 +39,7 @@ const Header = () => {
           <Link to="/cart" className="link-tag">
             <li className="header__icons">
               <BiCartAdd size={20} />
-              Cart
+              Cart {cartItems.length > 0 ? cartItems.length : null}
             </li>
           </Link>
           <li className="header__icons">

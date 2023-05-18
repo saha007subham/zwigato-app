@@ -117,7 +117,7 @@ const RestrauDetails = () => {
             {menu.map((data) => {
               return (
                 <div className="foodItem__div" key={data.id}>
-                  <FoodItems {...data} />
+                  <FoodItems {...data} restaurant={name} areaName={areaName} />
                 </div>
               );
             })}

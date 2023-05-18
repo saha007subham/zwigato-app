@@ -8,16 +8,20 @@ import Offer from "./pages/Offer";
 import ErrorPage from "./components/ErrorPage";
 import CartPage from "./pages/CartPage";
 import RestrauDetails from "./pages/RestrauDetails";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 //modified
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 

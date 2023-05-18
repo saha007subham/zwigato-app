@@ -26,6 +26,7 @@
     gap: 60px;
     align-items: center;
     box-shadow: 0px -3px 8px 5px rgba(0,0,0,0.1);
+    justify-content: space-evenly;
   }
 
   .header__icons {
