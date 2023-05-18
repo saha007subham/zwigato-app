@@ -8,7 +8,6 @@ const TrendingMenu = () => {
 
   const scroll = (direction) => {
     const { current } = scrollRef;
-    console.log("Clicked...");
 
     if (direction === "left") {
       current.scrollLeft -= 320;

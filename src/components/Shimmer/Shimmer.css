@@ -5,7 +5,9 @@
 .trending_main{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .trending{

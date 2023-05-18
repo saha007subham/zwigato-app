@@ -1,15 +1,27 @@
 import "./FoodItems.css";
 import { BiRupee } from "react-icons/bi";
 import { addItems } from "../../redux/cartSlice";
+import { removeItem } from "../../redux/cartSlice";
 import { useDispatch } from "react-redux";
+import { useState } from "react";
 
 const FoodItems = ({ name, price, url, restaurant, areaName }) => {
   const dispatch = useDispatch();
+  const [count, setCount] = useState(0);
 
   const handleAddItem = (name, price, url, restaurant, areaName) => {
+    setCount((prev) => prev + 1);
     const foodItems = { name, price, url, restaurant, areaName };
-    console.log(foodItems);
     dispatch(addItems(foodItems));
+  };
+
+  const handleRemoveItem = () => {
+    if (count > 0) {
+      setCount((prevCount) => prevCount - 1);
+      // You can also dispatch remove item action here if needed
+      const foodItems = { name, price, url, restaurant, areaName };
+      dispatch(removeItem(foodItems));
+    }
   };
 
   return (
@@ -24,8 +36,10 @@ const FoodItems = ({ name, price, url, restaurant, areaName }) => {
           {price}
         </p>
         <div className="addItems">
-          <button className="addItem_button">-</button>
-          <p style={{ margin: "0 15px 0 15px", fontSize: "15px" }}>0</p>
+          <button className="addItem_button" onClick={handleRemoveItem}>
+            -
+          </button>
+          <p style={{ margin: "0 15px 0 15px", fontSize: "15px" }}>{count}</p>
           <button
             className="addItem_button"
             onClick={() =>

@@ -10,12 +10,11 @@ import { MdDirectionsBike } from "react-icons/md";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaRegClock } from "react-icons/fa";
 import { TbDiscountCheck } from "react-icons/tb";
+import { useState } from "react";
 
 const RestrauDetails = () => {
   const params = useParams();
   // const { id } = useParams()
-
-  console.log(useRestraurant(params.id));
 
   const {
     name,

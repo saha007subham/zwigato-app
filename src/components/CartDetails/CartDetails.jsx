@@ -3,15 +3,17 @@ import { useCallback, useState } from "react";
 import { useSelector } from "react-redux";
 
 const CartDetails = () => {
-  const [cart, setCart] = useState([]);
-
   const cartItems = useSelector((store) => store.cart.items);
+  const cartPrice = cartItems[0]?.price;
+
+  const [cart, setCart] = useState([cartPrice]);
 
   const handleAddItem = (price) => {
     setCart([...cart, price]);
   };
 
   const removeFromCart = () => {
+    if (cart.length === 1) return;
     const updatedCart = cart.slice(0, -1);
     setCart(updatedCart);
   };
@@ -48,7 +50,7 @@ const CartDetails = () => {
                 -
               </button>
               <p style={{ margin: "0 15px 0 15px", fontSize: "15px" }}>
-                {cart.length}
+                {cart.length === 0 ? cartItems.length : cart.length}
               </p>
               <button
                 className="addItem_button"
@@ -88,7 +90,7 @@ const CartDetails = () => {
             </div>
 
             <div className="pay_div">
-              <div style={{ width: "50%" }}>
+              <div style={{ width: "80%" }}>
                 <p className="item_pay">To Pay</p>
               </div>
               <div>

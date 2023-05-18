@@ -10,17 +10,20 @@ import CartPage from "./pages/CartPage";
 import RestrauDetails from "./pages/RestrauDetails";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import { SearchProvider } from "./context/SearchContext";
 
 //modified
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-        <Header />
-        <Outlet />
-        <Footer />
-      </div>
+      <SearchProvider>
+        <div className="App">
+          <Header />
+          <Outlet />
+          <Footer />
+        </div>
+      </SearchProvider>
     </Provider>
   );
 }
