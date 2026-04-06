@@ -6,6 +6,7 @@ import TrendingMenu from "../../components/TrendingMenu";
 import RestaurantCard from "../../components/RestaurantCard";
 import Shimmer from "../../components/Shimmer";
 import { SearchContext } from "../../context/SearchContext";
+import { MOCK_RESTAURANTS } from "../../utils/resData";
 
 const Body = () => {
   const [filteredRestro, setFilterRestro] = useState([]);
@@ -14,17 +15,16 @@ const Body = () => {
   const { searchValue } = useContext(SearchContext);
 
   const getRestro = async () => {
-    const res = await fetch(GET_ALL_RESTAURANT);
+    // Temporarily using mock data to bypass CORS or API changes
+    // const res = await fetch(GET_ALL_RESTAURANT);
+    // const data = await res.json();
 
-    const data = await res.json();
+    const data = MOCK_RESTAURANTS;
 
-    // setAllRestro(data?.data?.cards[2]?.data?.data?.cards);
-    // setFilterRestro(data?.data?.cards[2]?.data?.data?.cards);
     const restaurants =
-      data?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants;
-
-    console.log(restaurants);
+      data?.data?.cards?.find(
+        (c) => c?.card?.card?.id === "restaurant_grid_listing_v2"
+      )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
     setAllRestro(restaurants);
     setFilterRestro(restaurants);
