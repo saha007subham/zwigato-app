@@ -10,6 +10,7 @@ const RestaurantCard = ({
   deliveryTime,
   costForTwoString,
 }) => {
+  console.log({ cloudinaryImageId });
   return (
     <div className="restra__card">
       <img

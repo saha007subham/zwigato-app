@@ -18,8 +18,16 @@ const Body = () => {
 
     const data = await res.json();
 
-    setAllRestro(data?.data?.cards[2]?.data?.data?.cards);
-    setFilterRestro(data?.data?.cards[2]?.data?.data?.cards);
+    // setAllRestro(data?.data?.cards[2]?.data?.data?.cards);
+    // setFilterRestro(data?.data?.cards[2]?.data?.data?.cards);
+    const restaurants =
+      data?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
+
+    console.log(restaurants);
+
+    setAllRestro(restaurants);
+    setFilterRestro(restaurants);
   };
 
   useEffect(() => {
@@ -37,21 +45,24 @@ const Body = () => {
         {filteredRestro
           ?.filter((val) => {
             if (searchValue === "") {
-              return val.data;
-            } else if (
-              val?.data?.name?.toLowerCase().includes(searchValue.toLowerCase())
-            ) {
-              return val.data;
+              return true;
             }
+            return val?.info?.name
+              ?.toLowerCase()
+              .includes(searchValue.toLowerCase());
           })
           .map((res) => {
             return (
               <Link
-                to={"/restraunts/" + res.data.id}
-                key={res.data.id}
+                to={"/restraunts/" + res?.info?.id}
+                key={res?.info?.id}
                 className="restaurant-cards"
               >
-                <RestaurantCard {...res.data} />
+                <RestaurantCard
+                  {...res?.info}
+                  deliveryTime={res?.info?.sla?.deliveryTime}
+                  costForTwoString={res?.info?.costForTwo}
+                />
               </Link>
             );
           })}
